@@ -1,0 +1,108 @@
+.users {
+    max-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.users h1 {
+    margin-bottom: 10px;
+}
+
+.users p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.users .gender label {
+    margin-right: 2rem;
+    font-size: 1rem;
+}
+
+.users .gender {
+    margin: 1rem 0;
+}
+
+.topusersCardContainer {
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+
+}
+
+.topusersCardContainer {
+    font-weight: bold;
+}
+
+.topusersCardContainer .EMAIL,
+.topusersCardContainer .GENDER,
+.topusersCardContainer .IMAGE,
+.topusersCardContainer .NAME {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 100%;
+
+}
+
+.IMAGE {
+    padding-left: 10px;
+    width: 20%;
+}
+
+.NAME {
+    width: 20%;
+}
+
+.EMAIL {
+    width: 40%;
+}
+
+.GENDER {
+    width: 20%;
+    justify-content: center;
+}
+
+.usersCard {
+    height: 20%;
+    width: 100%;
+
+    margin: 10px 0;
+    display: flex;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.333);
+}
+
+.usersCard:hover {
+    transition: all .3s ease-in-out;
+    transform: scale(1.03);
+    font-weight: 500;
+    background-color: rgba(99, 99, 99, 0.158);
+}
+
+.usersCard .EMAIL,
+.usersCard .GENDER,
+.usersCard .IMAGE,
+.usersCard .NAME {
+    display: flex;
+    font-size: 1rem;
+    height: 100%;
+
+}
+
+.usersCard .IMAGE img {
+    height: 100%;
+    width: 50%;
+}
+
+.usersCard p {
+    font-size: 1.1rem;
+}
